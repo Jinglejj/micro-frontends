@@ -2,14 +2,14 @@ import './public-path'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import ShoppingCart from './views/shopping-cart';
 import {BrowserRouter} from 'react-router-dom'
 
 function render(props) {
     const { container } = props;
     ReactDOM.render(
         <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/shoppingRouter' : '/'}>
-            <App />
+            <ShoppingCart />
         </BrowserRouter>
         , container ? container.querySelector('#root') : document.querySelector('#root'));
 }
