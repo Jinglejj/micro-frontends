@@ -1,0 +1,13 @@
+[
+  {
+    "name": "personalCenter",
+    "entry": "http://192.168.31.246:8081",
+    "container": "#personal-center",
+    "activeRule": "/personalCenter"
+  },{
+  "name": "shoppingCart",
+  "entry": "http://192.168.31.246:3000",
+  "container": "#shopping-cart",
+  "activeRule": "/shoppingCart"
+}
+]
