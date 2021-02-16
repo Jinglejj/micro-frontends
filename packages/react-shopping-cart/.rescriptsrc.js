@@ -1,3 +1,4 @@
+const path=require('path');
 const name = "shoppingCart";
 module.exports = {
     webpack: config => {
@@ -5,6 +6,9 @@ module.exports = {
         config.output.libraryTarget = 'umd';
         config.output.jsonpFunction = `webpackJsonp_${name}`;
         config.output.globalObject = 'window';
+        config.resolve.alias = Object.assign(config.resolve.alias, {
+            '@': path.resolve(__dirname, './src'),
+        });
         return config;
     },
     devServer: _ => {
