@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const CommidityContainer = styled.div`
   display: flex;
   margin-top: 16px;

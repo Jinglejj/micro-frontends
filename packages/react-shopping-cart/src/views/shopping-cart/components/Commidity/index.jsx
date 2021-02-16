@@ -1,7 +1,7 @@
 import { IoIosAdd, IoIosRemove } from "react-icons/io";
 import { BiTrashAlt } from "react-icons/bi";
-import Icon from "../../../components/icon";
-import { formatNumbser } from "../../../utils";
+import Icon from "@/components/icon";
+import { formatNumbser } from "@/utils";
 import { CommidityContainer,CommidityImage,InfoContainer,Info,HandleContainer,Delete} from './style'
 function Commidity(props) {
   const { commidity } = props;
