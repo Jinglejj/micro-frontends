@@ -1,17 +1,12 @@
 import React from 'react'
-import './index.scss'
+import {IconContainer} from './style'
 
 function Icon(props) {
-    const {icon} = props;
-
-    const style = {
-        fontSize: '1em',
-        color: '',
-    }
+    const {icon} = props
     return (
-        <span className='icon-container' style={style}>
+        <IconContainer className='icon-container' onClick={props.onClick} {...props} >
             {React.createElement(icon)}
-        </span>
+        </IconContainer>
     )
 }
 
