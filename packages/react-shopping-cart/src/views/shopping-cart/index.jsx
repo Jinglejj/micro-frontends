@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Commidity from "./components/Commidity";
-
+import {ShoppingCartContainer,CommidityContainer} from './style'
 const commodityList = [{
     id: 1,
     title: 'AirPods Pro',
@@ -28,18 +28,6 @@ const commodityList = [{
 }]
 
 
-const style={
-    commidity:{
-        marginLeft:'8px',
-        marginRight:'8px'
-    },
-    bottomInfo:{
-        display:'fixed',
-        bottom:0,
-        
-    }    
-}
-
 class ShoppingCart extends Component {
 
     constructor(props) {
@@ -64,12 +52,12 @@ class ShoppingCart extends Component {
         ))
 
         return (
-            <div>
-                <div style={{fontWeight: 'bolder'}}>购物车</div>
-                <div style={style.commidity}>
+            <ShoppingCartContainer>
+                <div className='title'>购物车</div>
+                <CommidityContainer >
                     {commidity}
-                </div>
-            </div>
+                </CommidityContainer>
+            </ShoppingCartContainer>
         );
     }
     handleAdd(id){
